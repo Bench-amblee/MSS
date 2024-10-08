@@ -6,7 +6,6 @@ import pandas as pd
 import ast
 
 def clean_text_data(df):
-    # Your text data cleaning logic here (similar to what we've done previously)
     cleaned_text_data = []
     current_question = None
     
@@ -25,7 +24,6 @@ def clean_text_data(df):
     return consolidated_text_df[0:23]
 
 def clean_numerical_data(df):
-    # Load the data and filter based on previous logic
     df_numerical = df.iloc[:, :3]  # Get the first three columns
 
     # Remove rows where the second column is NaN or empty
