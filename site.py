@@ -104,7 +104,7 @@ elif page == "Survey Text Analysis":
             if st.button("Generate"):
                 full_message = "Qustion: " + survey_question + " Responses: " + survey_responses
                 messages = [
-                {"role": "system", "content": 'Hello! You are a survey analysis tool, you will be given a question from a survey and some responses, your job is to analyze the responses and provide the top 3 insights from the responses.'},
+                {"role": "system", "content": 'Hello! You are a survey analysis tool, you will be given a question from a survey and some responses, your job is to analyze the responses and provide the top 3 insights from the responses. For each insight please also list the number of times that insight appeared among all responses. For example if the question was about customer satisfaction and the term "confused" came up in 10 responses, you would say that 10 respondants mentioned this along with a concise summary of the issue. Also keep in mind these responses are from a survey about the DC Public Library (DCPL)'},
                 {"role": "user", "content": full_message}
                 ]
         
